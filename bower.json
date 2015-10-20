@@ -1,0 +1,21 @@
+{
+  "name": "vui-dropdown",
+  "description": "Mixins and CSS for styling dropdowns",
+  "main": "dropdown.scss",
+  "authors": [
+    "D2L Corporation"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "d2l"
+  ],
+  "moduleType": [],
+  "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
