@@ -47,7 +47,7 @@ $vui-dropdown-expandIcon: url(../images/ico-expand.svg);
 	@extend vui-dropdown-list;
 	font-size: 16px;
 	line-height: 54px;
-	text-align: left;
+	text-align: center;
 	display: block;
 	list-style-type: none;
 	list-style-position: outside;
@@ -56,6 +56,7 @@ $vui-dropdown-expandIcon: url(../images/ico-expand.svg);
 	border-collapse: collapse;
 	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
 	border-radius: 8px;
+	color: #008cd1;
 
 	li {
 		border-left: 1px solid #d3d9e3;
@@ -96,8 +97,7 @@ $vui-dropdown-expandIcon: url(../images/ico-expand.svg);
 }
 
 @mixin vui-dropdown-arrow-icon() {
-	background-image: #{$vui-dropdown-expandIcon};
-
+	content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDE2IDEwIiB2ZXJzaW9uPSIxLjEiPjx0aXRsZT5fZXhwYW5kPC90aXRsZT48ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz48ZyBpZD0iU3R5bGUtR3VpZGUiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGlkPSJVSS1MaWJyYXJ5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxMy4wMDAwMDAsIC0zMDM3LjAwMDAwMCkiIGZpbGw9IiNCOUMyRDAiPjxnIGlkPSJJQ09OUyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjEwMS4wMDAwMDAsIDI5MzkuMDAwMDAwKSI+PGcgaWQ9IlRpZXItMy1TdHlsZXMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExOC4wMDAwMDAsIDkzLjU0OTAzNCkiPjxwYXRoIGQ9Ik0xMDkuNTcgNS40M0MxMDkgNC44NiAxMDguMDYgNC44NiAxMDcuNDkgNS40M0wxMDIgMTAuOTIgOTYuNTEgNS40M0M5NS45NCA0Ljg2IDk1IDQuODYgOTQuNDMgNS40MyA5My44NiA2IDkzLjg2IDYuOTQgOTQuNDMgNy41MUwxMDAuOTIgMTRDMTAxLjIyIDE0LjMgMTAxLjYxIDE0LjQ0IDEwMiAxNC40MyAxMDIuMzkgMTQuNDQgMTAyLjc4IDE0LjMgMTAzLjA4IDE0TDEwOS41NyA3LjUxQzExMC4xNCA2Ljk0IDExMC4xNCA2IDEwOS41NyA1LjQzIiBpZD0iX2V4cGFuZCIvPjwvZz48L2c+PC9nPjwvZz48L3N2Zz4=');
 }
 
 @mixin vui-dropdown-arrow-background($color) {

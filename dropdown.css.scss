@@ -32,7 +32,7 @@
 	@include vui-dropdown-item-disabled;
 }
 
-.vui-dropdown-arrow-icon {
+.vui-dropdown-arrow-icon::before {
 	@include vui-dropdown-arrow-icon;
 }
 
