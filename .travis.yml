@@ -1,3 +1,16 @@
 language: node_js
 node_js:
 - '0.12'
+deploy:
+  provider: npm
+  email: d2ltravisdeploy@d2l.com
+  api_key:
+    secure: k49iMtDeEwlvfoLKdW8aBYKquTyeJAWjtgmhssbQyK6rRqPK/xbRriKXwdh7vynvyEbG6K75YR3uJZgjSVBHFRDQfd0gWLm8o8S7V6+3Ol0jIUUy+G9BVyWKYf3nhc/8Abb+uetHwgKiwTcXFtzCW
+7XUTaj55PxRwFj5rLeuXjA6R1wWQcblMot0FhgvqFgN8YPaa2RDX4MHSIUEZkmNyUqIwVQnf1+LoWu9rmKdnhqp/3PrtOyteduwnbC4Yr9w6DmW+DE3ksC8NhRe5YgRCmrw8J/L2mg25Cm3dmv5r0nHrKI43Y0it
+F3pL106EC3PP8tJarhPZPNDIVTRBf6je5JT2v2b8gKOFk9kFlKRn6l9773xXDeKigV6JOHlyDOOAkGtgKVIp0OoKPQRCRkCz5k+eYJUPiqO4M3IUJKUQmlakpmKEuoBotWgit1QCzi1FO45eiAE73JS8qL7dBM3X
+yjLtqER1dog9bXKcxNeTUa7kCojBHdXr/cUlB3T59PeH0IVId9EeuYyZvLI6EYzUm8IRQoHgOpbS8VX1OxkONw1+i1lfitVpNhUBZ9/Wprfe+YP8OgYPy9VC+4HlnYSxW3B6ipElpoP/hJ9fmn93+Mar/NHyKtOd
+JPAgCRMdJ4LpdLwk5vyoCo5fWolPpgTnTkAVowU8mPH3Mck7jHkZJ0=
+  on:
+    tags: true
+    repo: Brightspace/valence-ui-dropdown
+    all_branches: true
