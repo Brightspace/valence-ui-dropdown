@@ -35,6 +35,7 @@
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "csslint": "^0.10.0",
+    "images-to-variables": "^0.3.0",
     "jasmine-core": "^2.3.4",
     "jasmine-dom-matchers": "^0.1.1",
     "karma": "^0.13.11",
