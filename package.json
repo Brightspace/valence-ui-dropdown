@@ -1,13 +1,13 @@
 {
   "name": "vui-dropdown",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Mixins and CSS for styling drop down menus",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o expand-icon.scss *.svg",
     "build:sass": "node-sass --output-style expanded dropdown.css.scss dropdown.css",
     "build:autoprefix": "postcss -c postcss.config.json",
     "build": "npm run build:sass && npm run build:autoprefix",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Brightspace/valence-ui-dropdown"
+    "url": "https://github.com/Brightspace/valence-ui-dropdown.git"
   },
   "keywords": [
     "d2l",
@@ -28,6 +28,10 @@
   ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/valence-ui-dropdown/issues"
+  },
+  "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
     "csslint": "^0.10.0",
@@ -40,6 +44,7 @@
     "node-sass": "^3.3.3",
     "phantomjs": "^1.9.18",
     "postcss-cli": "^2.2.0",
-    "rimraf": "^2.4.3"
+    "rimraf": "^2.4.3",
+    "vui-colors": "0.0.3"
   }
 }

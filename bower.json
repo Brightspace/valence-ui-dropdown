@@ -10,12 +10,14 @@
     "d2l"
   ],
   "moduleType": [],
-  "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
+  "homepage": "https://github.com/Brightspace/valence-ui-dropdown.git",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "package.json",
     "test",
-    "tests"
   ]
 }
