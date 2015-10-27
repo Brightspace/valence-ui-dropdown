@@ -12,6 +12,7 @@
     "build:autoprefix": "postcss -c postcss.config.json",
     "build": "npm run build:sass && npm run build:autoprefix",
     "pretest": "npm run build",
+    "postinstall": "bower install",
     "test": "csslint dropdown.css && karma start karma.conf.js"
   },
   "repository": {
@@ -34,6 +35,7 @@
   "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "bower": "^1.6.5",
     "csslint": "^0.10.0",
     "images-to-variables": "^0.3.0",
     "jasmine-core": "^2.3.4",
@@ -45,7 +47,6 @@
     "node-sass": "^3.3.3",
     "phantomjs": "^1.9.18",
     "postcss-cli": "^2.2.0",
-    "rimraf": "^2.4.3",
-    "vui-colors": "0.0.3"
+    "rimraf": "^2.4.3"
   }
 }

@@ -20,7 +20,7 @@
     "package.json",
     "test"
   ],
-  "devDependencies": {
+  "dependencies": {
     "vui-colors": "~0.0.4"
   }
 }
