@@ -1,22 +1,23 @@
 {
   "name": "vui-dropdown",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Mixins and CSS for styling drop down menus",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o expand-icon.scss *.svg",
     "build:sass": "node-sass --output-style expanded dropdown.css.scss dropdown.css",
     "build:autoprefix": "postcss -c postcss.config.json",
     "build": "npm run build:sass && npm run build:autoprefix",
     "pretest": "npm run build",
+    "postinstall": "bower install",
     "test": "csslint dropdown.css && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Brightspace/valence-ui-dropdown"
+    "url": "https://github.com/Brightspace/valence-ui-dropdown.git"
   },
   "keywords": [
     "d2l",
@@ -28,9 +29,15 @@
   ],
   "author": "D2L Corporation",
   "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Brightspace/valence-ui-dropdown/issues"
+  },
+  "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "devDependencies": {
     "autoprefixer": "^6.0.3",
+    "bower": "^1.6.5",
     "csslint": "^0.10.0",
+    "images-to-variables": "^0.3.0",
     "jasmine-core": "^2.3.4",
     "jasmine-dom-matchers": "^0.1.1",
     "karma": "^0.13.11",

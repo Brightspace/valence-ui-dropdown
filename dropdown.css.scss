@@ -35,11 +35,3 @@
 .vui-dropdown-arrow-icon::before {
 	@include vui-dropdown-arrow-icon;
 }
-
-.vui-dropdown-arrow-icon-primary {
-	@include vui-dropdown-arrow-background('#ffffff');
-}
-
-.vui-dropdown-arrow-icon-secondary {
-	@include vui-dropdown-arrow-background('#565a5c');
-}

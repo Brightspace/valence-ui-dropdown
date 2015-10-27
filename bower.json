@@ -12,10 +12,15 @@
   "moduleType": [],
   "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".npmignore",
+    ".travis.yml",
+    "package.json",
+    "test"
+  ],
+  "dependencies": {
+    "vui-colors": "~0.0.4"
+  }
 }
