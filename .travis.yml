@@ -12,5 +12,4 @@ yjLtqER1dog9bXKcxNeTUa7kCojBHdXr/cUlB3T59PeH0IVId9EeuYyZvLI6EYzUm8IRQoHgOpbS8VX1
 JPAgCRMdJ4LpdLwk5vyoCo5fWolPpgTnTkAVowU8mPH3Mck7jHkZJ0=
   on:
     tags: true
-    repo: Brightspace/valence-ui-dropdown
     all_branches: true
