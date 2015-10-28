@@ -10,7 +10,7 @@
   border: 1px solid #006fbf;
 }
 
-.vui-dropdown-dropdown-primary-active {
+.vui-dropdown-primary-active {
   padding: 15px 45px 15px 45px;
   border-radius: 6px;
   font-size: 1em;
@@ -111,8 +111,7 @@
   color: #7c8695;
 }
 
-.vui-dropdown-item-disabled:focus,
-.vui-dropdown-item-disabled:hover {
+.vui-dropdown-item-disabled:focus, .vui-dropdown-item-disabled:hover {
   background-color: #f2f3f5;
 }
 
