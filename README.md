@@ -34,5 +34,5 @@ For further information on this component and other VUI components, see the docs
 See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
 
-[ci-url]: https://magnum.travis-ci.com/Brightspace/valence-ui-dropdown
-[ci-image]: https://magnum.travis-ci.com/Brightspace/valence-ui-dropdown.svg?token=ZYvPKniByWFPuyqz8hm5&branch=master
+[ci-url]: https://travis-ci.org/Brightspace/valence-ui-dropdown
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-dropdown.svg?token=ZYvPKniByWFPuyqz8hm5&branch=master
