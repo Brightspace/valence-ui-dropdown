@@ -1,6 +1,8 @@
 # valence-ui-dropdown
 
+[![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
+[![Dependency Status][dependencies-image]][dependencies-url]
 
 Mixins and CSS for styling drop down menus
 
@@ -62,6 +64,9 @@ For further information on this component and other VUI components, see the docs
 #### Coding styles
 See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
-
+[npm-url]: https://www.npmjs.org/vui-dropdown
+[npm-image]: https://img.shields.io/npm/v/vui-dropdown.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-dropdown
 [ci-image]: https://travis-ci.org/Brightspace/valence-ui-dropdown.svg?branch=master
+[dependencies-url]: https://david-dm.org/Brightspace/valence-ui-dropdown
+[dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-dropdown.svg
