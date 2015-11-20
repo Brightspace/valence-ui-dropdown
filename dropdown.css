@@ -96,7 +96,18 @@
   border-top-right-radius: 8px;
 }
 
+.vui-dropdown-list-show li:first-child div {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
 .vui-dropdown-list-show li:last-child {
+  border-bottom: 1px solid #d3d9e3;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.vui-dropdown-list-show li:last-child div {
   border-bottom: 1px solid #d3d9e3;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
