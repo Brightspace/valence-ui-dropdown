@@ -97,6 +97,11 @@
 
 @mixin vui-dropdown-item() {
 	padding: 8px 15px 8px 15px;
+
+	&:focus,
+	&:hover {
+		background-color: $vui-color-celestine-light-1;
+	}
 }
 
 @mixin vui-dropdown-item-disabled() {
