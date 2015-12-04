@@ -77,31 +77,18 @@
 	li:first-child {
 		border-top-left-radius: 8px;
 		border-top-right-radius: 8px;
-		div {
-			border-top-left-radius: 8px;
-			border-top-right-radius: 8px;
-		}		
 	}
 
 	li:last-child {
 		border-bottom: 1px solid $vui-color-titanius;
 		border-bottom-left-radius: 8px;
 		border-bottom-right-radius: 8px;
-		div {
-			border-bottom: 1px solid $vui-color-titanius;
-			border-bottom-left-radius: 8px;
-			border-bottom-right-radius: 8px;
-		}		
 	}
 }
 
 @mixin vui-dropdown-item() {
 	padding: 8px 15px 8px 15px;
-
-	&:focus,
-	&:hover {
-		background-color: $vui-color-celestine-light-1;
-	}
+	outline-style: none;
 }
 
 @mixin vui-dropdown-item-disabled() {
@@ -116,5 +103,4 @@
 
 @mixin vui-dropdown-arrow-icon() {
 	content: $vui-ico-expand;
-
 }
