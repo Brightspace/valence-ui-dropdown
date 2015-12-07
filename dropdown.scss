@@ -88,6 +88,7 @@
 
 @mixin vui-dropdown-item() {
 	padding: 8px 15px 8px 15px;
+	outline-style: none;
 }
 
 @mixin vui-dropdown-item-disabled() {
@@ -102,5 +103,4 @@
 
 @mixin vui-dropdown-arrow-icon() {
 	content: $vui-ico-expand;
-
 }
