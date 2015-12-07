@@ -1,6 +1,6 @@
 {
   "name": "vui-dropdown",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mixins and CSS for styling drop down menus",
   "directories": {
     "test": "test"

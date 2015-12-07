@@ -1,5 +1,6 @@
 {
   "name": "vui-dropdown",
+  "version": "0.0.4",
   "description": "Mixins and CSS for styling dropdowns",
   "main": "dropdown.scss",
   "authors": [
