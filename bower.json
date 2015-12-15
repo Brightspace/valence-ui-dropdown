@@ -1,27 +1,19 @@
 {
   "name": "vui-dropdown",
-  "version": "0.0.4",
-  "description": "Mixins and CSS for styling dropdowns",
   "main": "dropdown.scss",
-  "authors": [
-    "D2L Corporation"
-  ],
   "license": "Apache-2.0",
-  "keywords": [
-    "d2l"
-  ],
-  "moduleType": [],
-  "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "ignore": [
     ".editorconfig",
     ".gitattributes",
     ".gitignore",
     ".npmignore",
     ".travis.yml",
+    "karma.conf.js",
     "package.json",
+    "postcss.config.json",
     "test"
   ],
   "dependencies": {
-    "vui-colors": "~0.0.4"
+    "vui-colors": "^0.1.0"
   }
 }

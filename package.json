@@ -1,10 +1,7 @@
 {
   "name": "vui-dropdown",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Mixins and CSS for styling drop down menus",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean && imgtoscss -p vui- -o expand-icon.scss *.svg",
@@ -33,9 +30,11 @@
     "url": "https://github.com/Brightspace/valence-ui-dropdown/issues"
   },
   "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
+  "dependencies": {
+    "bower": "^1.6.5"
+  },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
-    "bower": "^1.6.5",
     "csslint": "^0.10.0",
     "images-to-variables": "^0.3.0",
     "jasmine-core": "^2.3.4",
