@@ -8,10 +8,7 @@
     ".gitignore",
     ".npmignore",
     ".travis.yml",
-    "karma.conf.js",
-    "package.json",
-    "postcss.config.json",
-    "test"
+    "package.json"
   ],
   "dependencies": {
     "vui-colors": "^0.1.0",

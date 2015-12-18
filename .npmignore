@@ -5,4 +5,5 @@
 .travis.yml
 bower_components
 node_modules
-test
+dropdown.css
+dropdown.css.scss
