@@ -1,37 +1,17 @@
 @import 'dropdown';
 
-.vui-dropdown-primary {
-	@include vui-dropdown-primary;
+.vui-dropdown-menu {
+	@include vui-dropdown-menu;
 }
 
-.vui-dropdown-primary-active {
-	@include vui-dropdown-primary-active;
+.vui-dropdown-menu-item-focus {
+	@include vui-dropdown-menu-item-focus;
 }
 
-.vui-dropdown-secondary {
-	@include vui-dropdown-secondary;
+.vui-dropdown-menu-item-link {
+	@include vui-dropdown-menu-item-link;
 }
 
-.vui-dropdown-secondary-active {
-	@include vui-dropdown-secondary-active;
-}
-
-.vui-dropdown-list {
-	@include vui-dropdown-list;
-}
-
-.vui-dropdown-list-show {
-	@include vui-dropdown-list-show;
-}
-
-.vui-dropdown-item {
-	@include vui-dropdown-item;
-}
-
-.vui-dropdown-item-disabled {
-	@include vui-dropdown-item-disabled;
-}
-
-.vui-dropdown-arrow-icon::before {
-	@include vui-dropdown-arrow-icon;
+.vui-dropdown-menu-item-link-disabled {
+	@include vui-dropdown-menu-item-link-disabled;
 }

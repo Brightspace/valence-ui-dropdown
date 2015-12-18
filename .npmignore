@@ -5,7 +5,4 @@
 .travis.yml
 bower_components
 node_modules
-karma.conf.js
-postcss.config.json
 test
-dropdown.css.scss
