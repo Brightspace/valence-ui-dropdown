@@ -1,106 +1,79 @@
-@import 'bower_components/vui-colors/colors';
-@import 'expand-icon.scss';
+@import 'bower_components/vui-colors/colors.scss';
+@import 'bower_components/vui-typography/px-to-base-rem.scss';
+@import 'dropdown-icons.scss';
 
-@mixin vui-dropdown() {
-	padding: 15px 45px 15px 45px;
-	border-radius: 6px;
-	font-size: 1em;
-	line-height: 20px;
-	color: $vui-color-white;
-}
+@mixin vui-dropdown-menu() {
 
-@mixin vui-dropdown-primary() {
-	@include vui-dropdown;
-	background: $vui-color-celestine-light-2;
-	transition: background-color 0.5s ease;
-	border: 1px solid $vui-color-celestine;
-}
+	background-color: $vui-color-white;
+	border-radius: px-to-base-rem(8px);
+	box-shadow: 0 2px 12px 0 $vui-color-titanius;
+	min-width: px-to-base-rem(250px);
 
-@mixin vui-dropdown-primary-active() {
-	@include vui-dropdown-primary;
-	border: 1px solid $vui-color-celestine;
-	background: $vui-color-celestine;
-	cursor: pointer;
-}
+	& > ul {
 
-@mixin vui-dropdown-secondary() {
-	@include vui-dropdown;
-	border: 1px solid $vui-color-galena;
-	background-image: $vui-color-buttonic;
-	color: $vui-color-ferrite;
-}
+		list-style-image: none;
+		list-style-position: outside;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
 
-@mixin vui-dropdown-secondary-active() {
-	@include vui-dropdown-secondary;
-	border: 1px solid #bac2d0;
-	background: $vui-color-gypsum;
-	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.05);
-}
+		& > li {
 
-@mixin vui-dropdown-list() {
-	display: none;
-	position: absolute;
-}
+			border-top: 1px solid $vui-color-titanius;
+			border-left: 1px solid $vui-color-titanius;
+			border-right: 1px solid $vui-color-titanius;
+			text-align: center;
 
-@mixin vui-dropdown-list-show() {
-	@include vui-dropdown-list;
-	font-size: 1em;
-	line-height: 54px;
-	text-align: center;
-	display: block;
-	list-style-type: none;
-	list-style-position: outside;
-	padding: 0;
-	margin: 0;
-	border-collapse: collapse;
-	box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
-	border-radius: 8px;
-	color: $vui-color-celestine;
+			&:first-child {
+				border-top-left-radius: px-to-base-rem(8px);
+				border-top-right-radius: px-to-base-rem(8px);
+			}
 
-	li {
-		border-left: 1px solid $vui-color-titanius;
-		border-right: 1px solid $vui-color-titanius;
-		border-top: 1px solid $vui-color-titanius;
-		border-bottom: none;
-		background-color: $vui-color-white;
+			&:last-child {
+				border-bottom-left-radius: px-to-base-rem(8px);
+				border-bottom-right-radius: px-to-base-rem(8px);
+				border-bottom: 1px solid $vui-color-titanius;
+			}
+
+		}
+
 	}
 
-	li:focus {
-		background-color: $vui-color-celestine-light-1;
-	}
-
-	li:hover {
-		background-color: $vui-color-celestine-light-1;
-		cursor: pointer;
-	}
-
-	li:first-child {
-		border-top-left-radius: 8px;
-		border-top-right-radius: 8px;
-	}
-
-	li:last-child {
-		border-bottom: 1px solid $vui-color-titanius;
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
-	}
 }
 
-@mixin vui-dropdown-item() {
-	padding: 8px 15px 8px 15px;
-	outline-style: none;
+@mixin vui-dropdown-menu-item-focus() {
+
+	background-color: $vui-color-celestine-light-1;
+
+	&, &:last-child {
+		border: 1px solid $vui-color-celestine-light-2;
+	}
+
+	& + li {
+		border-top-width: 0;
+	}
+
 }
 
-@mixin vui-dropdown-item-disabled() {
-	@include vui-dropdown-item;
-	color: $vui-color-galena;
+@mixin vui-dropdown-menu-item-link() {
+
+	@include vui-link;
+
+	display: inline-block;
+	line-height: 1.5rem;
+	padding-top: px-to-base-rem(11px);
+	padding-bottom: px-to-base-rem(11px);
+	width: 100%;
 
 	&:focus,
 	&:hover {
-		background-color: $vui-color-woolonardo;
+		color: $vui-color-celestine;
+		text-decoration: none;
 	}
+
 }
 
-@mixin vui-dropdown-arrow-icon() {
-	content: $vui-ico-expand;
+@mixin vui-dropdown-menu-item-link-disabled() {
+	cursor: default;
+	opacity: 0.5;
 }

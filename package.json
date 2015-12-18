@@ -1,10 +1,10 @@
 {
   "name": "vui-dropdown",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Mixins and CSS for styling drop down menus",
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o expand-icon.scss *.svg",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o dropdown-icons.scss *.svg",
     "build:sass": "node-sass --output-style expanded dropdown.css.scss dropdown.css",
     "build:autoprefix": "postcss -c postcss.config.json",
     "build": "npm run build:sass && npm run build:autoprefix",
