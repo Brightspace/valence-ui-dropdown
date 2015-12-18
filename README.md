@@ -1,60 +1,84 @@
 # valence-ui-dropdown
-
+[![Bower version][bower-image]][bower-url]
 [![NPM version][npm-image]][npm-url]
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-Mixins and CSS for styling drop down menus
+This component contains Sass mixins and CSS that you can use to style dropdown menus.
 
-This component contains Sass mixins and CSS that can be used to create a loading spinner.
+## Installation
+
+Install from NPM:
+```shell
+npm install vui-dropdown
+```
+
+Install from Bower:
+```shell
+bower install vui-dropdown
+```
 
 ## Usage
-### Menu Buttons
 
-```js
-//HTML for creating a primary menu button
-<div class='primary-menu' />
+This module does not provide any specific styling for the button itself, since this may be accomplished with [vui-button](https://github.com/Brightspace/valence-ui-button) depending on your implementation.
 
-//CSS or SASS
-.primary-menu {
-	@include vui-dropdown-primary; //Will use default style
-}
+**Import the mixins:**
 
-OR
+```scss
+@import 'bower_components/vui-dropdown/dropdown.scss'; // or...
 
-//HTML for creating a secondary menu button
-<div class='secondary-menu' />
-
-.secondary-menu {
-	@include vui-dropdown-secondary;
-}
-
+@import "node_modules/vui-dropdown/dropdown.scss";
 ```
 
-### Menu List
-The menu list should contain list items
-```js
+**Icons:**
 
-//CSS or SASS
-// showing the menu list
-.menu-list {
-	@include vui-dropdown-list-show
+Use the correct icon based on the type of color. For example:
+
+* Primary buttons (white icon): `$vui-dropdown-ferrite`
+* Secondary buttons (ferrite icon): `$vui-dropdown-white`
+
+**Menu:**
+
+The menu contains the list of items. A simple implementation to position the menu underneath a button would be:
+
+```scss
+.vui-dropdown-menu {
+
+	@include vui-dropdown-menu; 
+
+	display: none;
+	left: 0;
+	position: absolute;
+	top: 2.5rem;
+	z-index: 100;
+
+	[dir="rtl"] & {
+		right: 0;
+	}
+
 }
-// hiding the menu
-.menu-list-hide {
-	@include vui-dropdown-list
+
+.vui-dropdown-menu-visible {
+	display: inline-block;
 }
 ```
 
-### Menu Items
-```js
-// typical menu item
-.menu-item {
-	@include vui-dropdwon-item;
+**Menu Items:**
+
+```scss
+// typical item link
+.vui-dropdown-menu-item > a {
+	@include vui-dropdown-menu-item-link;
 }
-// disabled menu item
-.menu-item-disabled {
-	@include vui-dropdown-item-disabled;
+
+// item link that has focus
+.vui-dropdown-menu-item.vui-dropdown-menu-item-focus {
+	@include vui-dropdown-menu-item-focus;
+}
+
+// item link that is disabled
+.vui-dropdown-menu-item-disabled > a {
+	@include vui-dropdown-menu-item-link-disabled;
 }
 ```
 
@@ -62,8 +86,11 @@ The menu list should contain list items
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 #### Coding styles
+
 See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valence-ui-docs/wiki/Best-Practices-&-Style-Guide) for information on VUI naming conventions, plus information about the [EditorConfig](http://editorconfig.org) rules used in this repo.
 
+[bower-url]: http://bower.io/search/?q=vui-dropdown
+[bower-image]: https://img.shields.io/bower/v/vui-dropdown.svg
 [npm-url]: https://www.npmjs.org/vui-dropdown
 [npm-image]: https://img.shields.io/npm/v/vui-dropdown.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-dropdown

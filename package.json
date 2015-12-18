@@ -1,16 +1,14 @@
 {
   "name": "vui-dropdown",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Mixins and CSS for styling drop down menus",
   "scripts": {
     "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o expand-icon.scss *.svg",
-    "build:sass": "node-sass --output-style expanded dropdown.css.scss dropdown.css",
-    "build:autoprefix": "postcss -c postcss.config.json",
-    "build": "npm run build:sass && npm run build:autoprefix",
-    "pretest": "npm run build",
+    "prebuild": "npm run clean && imgtoscss -p vui- -o dropdown-icons.scss *.svg",
+    "build": "node-sass --output-style expanded dropdown.css.scss dropdown.css",
     "postinstall": "bower install",
-    "test": "csslint dropdown.css && karma start karma.conf.js"
+    "pretest": "npm run build",
+    "test": "csslint dropdown.css"
   },
   "repository": {
     "type": "git",
@@ -34,18 +32,9 @@
     "bower": "^1.6.5"
   },
   "devDependencies": {
-    "autoprefixer": "^6.0.3",
     "csslint": "^0.10.0",
     "images-to-variables": "^0.3.0",
-    "jasmine-core": "^2.3.4",
-    "jasmine-dom-matchers": "^0.1.1",
-    "karma": "^0.13.11",
-    "karma-cli": "^0.1.1",
-    "karma-jasmine": "^0.3.6",
-    "karma-phantomjs-launcher": "^0.2.1",
     "node-sass": "^3.3.3",
-    "phantomjs": "^1.9.18",
-    "postcss-cli": "^2.2.0",
     "rimraf": "^2.4.3"
   }
 }
