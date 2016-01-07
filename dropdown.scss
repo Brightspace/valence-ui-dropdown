@@ -61,8 +61,7 @@
 
 	display: inline-block;
 	line-height: 1.5rem;
-	padding-top: px-to-base-rem(11px);
-	padding-bottom: px-to-base-rem(11px);
+	padding: px-to-base-rem(11px);
 	width: 100%;
 
 	&:focus,
