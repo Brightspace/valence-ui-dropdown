@@ -1,10 +1,10 @@
-@import 'dropdown';
+@import 'dropdown.scss';
 
 .vui-dropdown-menu {
 	@include vui-dropdown-menu;
 }
 
-.vui-dropdown-menu-item-focus {
+.vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus {
 	@include vui-dropdown-menu-item-focus;
 }
 
