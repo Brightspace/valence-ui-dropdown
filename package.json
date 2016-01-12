@@ -1,6 +1,6 @@
 {
   "name": "vui-dropdown",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "Mixins and CSS for styling drop down menus",
   "scripts": {
     "clean": "rimraf *.css",
