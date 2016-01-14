@@ -7,7 +7,8 @@
 	background-color: $vui-color-white;
 	border-radius: 0.4rem;
 	box-shadow: 0 2px 12px 0 $vui-color-titanius;
-	min-width: 12.5rem;
+	min-width: 3.5rem;
+	max-width: 18.5rem;
 
 	& > ul {
 
@@ -60,7 +61,10 @@
 
 	display: inline-block;
 	line-height: 1.5rem;
+	overflow-x: hidden;
 	padding: 0.55rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	width: 100%;
 
 	&:focus,
