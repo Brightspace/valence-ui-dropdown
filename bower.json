@@ -12,7 +12,6 @@
   ],
   "dependencies": {
     "vui-colors": "^0.2.0",
-    "vui-link": "^1.1.0",
-    "vui-typography": "~2.0.0"
+    "vui-link": "^1.1.1"
   }
 }
