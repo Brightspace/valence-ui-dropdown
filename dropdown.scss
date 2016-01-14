@@ -1,14 +1,13 @@
 @import 'bower_components/vui-colors/colors.scss';
 @import 'bower_components/vui-link/link.scss';
-@import 'bower_components/vui-typography/px-to-base-rem.scss';
 @import 'dropdown-icons.scss';
 
 @mixin vui-dropdown-menu() {
 
 	background-color: $vui-color-white;
-	border-radius: px-to-base-rem(8px);
+	border-radius: 0.4rem;
 	box-shadow: 0 2px 12px 0 $vui-color-titanius;
-	min-width: px-to-base-rem(250px);
+	min-width: 12.5rem;
 
 	& > ul {
 
@@ -25,13 +24,13 @@
 			border-right: 1px solid $vui-color-titanius;
 
 			&:first-child {
-				border-top-left-radius: px-to-base-rem(8px);
-				border-top-right-radius: px-to-base-rem(8px);
+				border-top-left-radius: 0.4rem;
+				border-top-right-radius: 0.4rem;
 			}
 
 			&:last-child {
-				border-bottom-left-radius: px-to-base-rem(8px);
-				border-bottom-right-radius: px-to-base-rem(8px);
+				border-bottom-left-radius: 0.4rem;
+				border-bottom-right-radius: 0.4rem;
 				border-bottom: 1px solid $vui-color-titanius;
 			}
 
@@ -61,7 +60,7 @@
 
 	display: inline-block;
 	line-height: 1.5rem;
-	padding: px-to-base-rem(11px);
+	padding: 0.55rem;
 	width: 100%;
 
 	&:focus,
