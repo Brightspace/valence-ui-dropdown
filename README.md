@@ -82,7 +82,6 @@ The menu contains the list of items. A simple implementation to position the men
 }
 ```
 
-
 For further information on this component and other VUI components, see the docs at [ui.valence.d2l.com](http://ui.valence.d2l.com/).
 
 #### Coding styles

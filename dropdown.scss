@@ -2,6 +2,9 @@
 @import 'bower_components/vui-link/link.scss';
 @import 'dropdown-icons.scss';
 
+$vui-dropdown-menu-item-separator-color: $vui-color-pressicus !default;
+$vui-dropdown-menu-item-separator-width: 1px !default;
+
 @mixin vui-dropdown-menu() {
 
 	background-color: $vui-color-white;
@@ -38,6 +41,13 @@
 
 		}
 
+		& > li[role='separator'] {
+			border: 0;
+			& + li {
+				border-top: $vui-dropdown-menu-item-separator-width solid $vui-dropdown-menu-item-separator-color;
+			}
+		}
+
 	}
 
 }
@@ -50,7 +60,8 @@
 		border: 1px solid $vui-color-celestine-light-2;
 	}
 
-	& + li {
+	& + li,
+	& + li[role='separator'] + li {
 		border-top-width: 0;
 	}
 
