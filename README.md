@@ -34,8 +34,8 @@ This module does not provide any specific styling for the button itself, since t
 
 Use the correct icon based on the type of color. For example:
 
-* Primary buttons (white icon): `$vui-dropdown-ferrite`
-* Secondary buttons (ferrite icon): `$vui-dropdown-white`
+* Primary buttons (white icon): `$vui-dropdown-white`
+* Secondary buttons (ferrite icon): `$vui-dropdown-tungsten`
 
 **Menu:**
 

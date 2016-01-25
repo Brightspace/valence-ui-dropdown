@@ -32,6 +32,14 @@
   border-bottom: 1px solid #d3d9e3;
 }
 
+.vui-dropdown-menu > ul > li[role='separator'] {
+  border: 0;
+}
+
+.vui-dropdown-menu > ul > li[role='separator'] + li {
+  border-top: 1px solid #b9c2d0;
+}
+
 .vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus {
   background-color: #f2f8fc;
 }
@@ -40,7 +48,8 @@
   border: 1px solid #99c5e5;
 }
 
-.vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus + li {
+.vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus + li,
+.vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus + li[role='separator'] + li {
   border-top-width: 0;
 }
 
