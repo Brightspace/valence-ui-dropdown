@@ -1,0 +1,68 @@
+@import 'bower_components/vui-typography/typography.scss';
+@import '../dropdown.scss';
+
+html {
+	font-size: 20px;
+}
+body {
+	@include vui-typography;
+	margin: 1rem;
+}
+table {
+	max-width: 1000px;
+}
+td, th {
+	padding: 0.5rem;
+}
+td {
+}
+
+.vui-dropdown-menu {
+	@include vui-dropdown-menu;
+}
+
+.vui-dropdown-menu a {
+	@include vui-dropdown-menu-item-link;
+}
+
+.vui-dropdown-menu .focus {
+	@include vui-dropdown-menu-item-focus;
+}
+
+.vui-dropdown-menu a.disabled {
+	@include vui-dropdown-menu-item-link-disabled;
+}
+
+.vui-dropdown-context-menu {
+	@include vui-dropdown-context-menu;
+}
+
+.vui-dropdown-context-menu-icon {
+	@include vui-dropdown-context-menu-icon;
+}
+
+.vui-dropdown-context-menu.focus {
+	@include _vui-dropdown-context-menu-focus;
+}
+
+.vui-dropdown-button-menu {
+	@include vui-dropdown-button-menu;
+}
+
+.vui-dropdown-button-menu > span {
+	@include vui-dropdown-button-menu-content;
+}
+
+.vui-dropdown-button-menu-primary {
+	@include vui-dropdown-button-menu-primary;
+}
+
+.vui-dropdown-button-menu-primary > span {
+	@include vui-dropdown-button-menu-primary-content;
+}
+
+.vui-dropdown-button-menu > span.hidden-text,
+.vui-dropdown-button-menu-primary > span.hidden-text {
+	@include vui-dropdown-button-menu-text-hidden;
+}
+
