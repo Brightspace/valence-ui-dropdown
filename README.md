@@ -49,10 +49,12 @@ The menu contains the list of items. A simple implementation to position the men
 	display: none;
 	left: 0;
 	position: absolute;
-	top: 2.5rem;
-	z-index: 100;
+	top: 2.1rem;
+	margin-top: 0.5rem;
+	z-index: 1001;
 
 	[dir="rtl"] & {
+		left: auto;
 		right: 0;
 	}
 
