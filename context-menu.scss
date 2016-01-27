@@ -1,15 +1,20 @@
 @import 'bower_components/vui-colors/colors.scss';
+@import 'bower_components/vui-offscreen/offscreen.scss';
 @import 'icons.scss';
 
 @mixin vui-dropdown-context-menu() {
 
 	background-color: transparent;
+	background-image: $vui-dropdown-icon-tungsten;
+	background-position: center center;
+	background-repeat: no-repeat;
 	border: 1px solid transparent;
 	border-radius: 0.3rem;
 	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
 	min-height: calc(2rem + 2px);
+	outline-style: none;
 	padding: 0.5rem 0;
 	vertical-align: middle;
 	width: calc(2rem + 2px);
@@ -19,22 +24,15 @@
 		@include _vui-dropdown-context-menu-focus;
 	}
 
+	& > span {
+		@include vui-offscreen;
+	}
+
 }
 
 @mixin _vui-dropdown-context-menu-focus() {
 
 	background-color: $vui-color-gypsum;
 	border-color: $vui-color-titanius;
-
-}
-
-@mixin vui-dropdown-context-menu-icon() {
-
-	background-image: $vui-dropdown-icon-tungsten;
-	background-position: center center;
-	background-repeat: no-repeat;
-	display: inline-block;
-	min-height: 10px;
-	min-width: 18px;
 
 }
