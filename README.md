@@ -37,6 +37,51 @@ Use the correct icon based on the type of color. For example:
 * Primary buttons (white icon): `$vui-dropdown-white`
 * Secondary buttons (ferrite icon): `$vui-dropdown-tungsten`
 
+**Button Menu:**
+
+Styling for a button menu with mark-up such as:
+
+```html
+<button>
+	<span>
+		<span>Some Text</span>
+	</span>
+</button>
+```
+
+```scss
+button {
+
+	@include vui-dropdown-button-menu; // or...
+	@include vui-dropdown-button-menu-primary;
+
+	& > span {
+		@include vui-dropdown-button-menu-content;
+	}
+
+}
+```
+
+**Context Menu:**
+
+Styling for a button to be a simple context-menu with with mark-up such as:
+
+```html
+<button>
+	<span>Some Text</span>
+</button>
+```
+
+```scss
+button {
+
+	@include vui-dropdown-context-menu;
+
+}
+```
+
+**Important:** text should always be provided to make the button accessible. The mixin will create styles to position the text (contained with the `span`) offscreen.
+
 **Menu:**
 
 The menu contains the list of items. A simple implementation to position the menu underneath a button would be:
@@ -49,10 +94,12 @@ The menu contains the list of items. A simple implementation to position the men
 	display: none;
 	left: 0;
 	position: absolute;
-	top: 2.5rem;
-	z-index: 100;
+	top: 2.1rem;
+	margin-top: 0.5rem;
+	z-index: 1001;
 
 	[dir="rtl"] & {
+		left: auto;
 		right: 0;
 	}
 

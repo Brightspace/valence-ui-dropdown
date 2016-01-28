@@ -54,6 +54,7 @@
 }
 
 .vui-dropdown-menu-item-link {
+  box-sizing: border-box;
   display: inline-block;
   line-height: 1.5rem;
   overflow-x: hidden;

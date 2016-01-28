@@ -1,0 +1,53 @@
+@import 'bower_components/vui-button/button.scss';
+@import 'bower_components/vui-offscreen/offscreen.scss';
+@import 'icons.scss';
+
+@mixin vui-dropdown-button-menu() {
+
+	@include vui-button;
+
+}
+
+@mixin vui-dropdown-button-menu-primary() {
+
+	@include vui-button-primary;
+
+}
+
+@mixin vui-dropdown-button-menu-content($icon: $vui-dropdown-icon-tungsten) {
+
+	background-image: $icon;
+	background-position: right center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding-right: 1.4rem;
+	min-height: 10px;
+	min-width: 18px;
+
+	[dir='rtl'] & {
+		background-position: left center;
+		padding-left: 1.4rem;
+		padding-right: 0;
+	}
+
+}
+
+@mixin vui-dropdown-button-menu-primary-content() {
+	@include vui-dropdown-button-menu-content(
+			$icon: $vui-dropdown-icon-white
+		);
+}
+
+@mixin vui-dropdown-button-menu-text-hidden() {
+
+	& > span {
+		@include vui-offscreen;
+	}
+
+	padding-right: 0;
+
+	[dir='rtl'] & {
+		padding-left: 0;
+	}
+
+}
