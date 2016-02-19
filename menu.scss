@@ -5,9 +5,27 @@ $vui-dropdown-menu-offset: 0.5rem !default;
 $vui-dropdown-menu-item-separator-color: $vui-color-pressicus !default;
 $vui-dropdown-menu-item-separator-width: 1px !default;
 
-@keyframes vui-dropdown-menu-animation-show {
-	0% { margin-top: $vui-dropdown-menu-offset + 0.5rem; margin-bottom: $vui-dropdown-menu-offset + 0.5rem; opacity: 0; }
-	100% { margin-top: $vui-dropdown-menu-offset; margin-bottom: $vui-dropdown-menu-offset; opacity: 1; }
+$vui-dropdown-menu-animation-vertical-offset: 0.5rem !default;
+$vui-dropdown-menu-animation-duration: 300ms !default;
+$vui-dropdown-menu-animation-timing: ease !default;
+
+@keyframes vui-dropdown-menu-animation-frames {
+	0% { 
+		margin-top: $vui-dropdown-menu-offset - $vui-dropdown-menu-animation-vertical-offset;
+		margin-bottom: $vui-dropdown-menu-offset - $vui-dropdown-menu-animation-vertical-offset;
+		opacity: 0;
+	}
+	100% { 
+		margin-top: $vui-dropdown-menu-offset;
+		margin-bottom: $vui-dropdown-menu-offset;
+		opacity: 1;
+	}
+}
+
+@mixin vui-dropdown-menu-animation() {
+	animation: vui-dropdown-menu-animation-frames 
+		$vui-dropdown-menu-animation-duration 
+		$vui-dropdown-menu-animation-timing;
 }
 
 @mixin vui-dropdown-menu() {
