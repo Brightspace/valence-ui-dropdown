@@ -13,10 +13,6 @@
     "package.json"
   ],
   "dependencies": {
-    "vui-button": "~1.2.0",
-    "vui-colors": "^0.2.0",
-    "vui-link": "^1.1.1",
-    "vui-offscreen": "~0.3.0",
-    "vui-typography": "~2.0.0"
+    "vui-offscreen": "~0.3.0"
   }
 }
