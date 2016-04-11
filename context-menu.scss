@@ -5,7 +5,8 @@
 @mixin vui-dropdown-context-menu() {
 
 	background-color: transparent;
-	background-image: $vui-dropdown-icon-tungsten;
+	background-image: $vui-dropdown-icon-secondary;
+	background-size: 0.8rem;
 	background-position: center center;
 	background-repeat: no-repeat;
 	border: 1px solid transparent;
@@ -31,6 +32,13 @@
 }
 
 @mixin _vui-dropdown-context-menu-focus() {
+
+	background-color: $vui-color-woolonardo;
+	border-color: $vui-color-titanius;
+
+}
+
+@mixin vui-dropdown-context-menu-open() {
 
 	background-color: $vui-color-gypsum;
 	border-color: $vui-color-titanius;

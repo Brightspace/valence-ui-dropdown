@@ -37,6 +37,10 @@ td {
 	@include vui-dropdown-context-menu;
 }
 
+.vui-dropdown-context-menu.open {
+	@include vui-dropdown-context-menu-open;
+}
+
 .vui-dropdown-context-menu.focus {
 	@include _vui-dropdown-context-menu-focus;
 }

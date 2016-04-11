@@ -34,8 +34,8 @@ This module does not provide any specific styling for the button itself, since t
 
 Use the correct icon based on the type of color. For example:
 
-* Primary buttons (white icon): `$vui-dropdown-white`
-* Secondary buttons (ferrite icon): `$vui-dropdown-tungsten`
+* Primary buttons: `$vui-dropdown-primary`
+* Secondary buttons: `$vui-dropdown-secondary`
 
 **Button Menu:**
 
@@ -78,6 +78,11 @@ button {
 	@include vui-dropdown-context-menu;
 
 }
+button.open {
+
+	@include vui-dropdown-context-menu-open;
+
+}
 ```
 
 **Important:** text should always be provided to make the button accessible. The mixin will create styles to position the text (contained with the `span`) offscreen.
@@ -89,7 +94,7 @@ The menu contains the list of items. A simple implementation to position the men
 ```scss
 .vui-dropdown-menu {
 
-	@include vui-dropdown-menu; 
+	@include vui-dropdown-menu;
 
 	display: none;
 	left: 0;
