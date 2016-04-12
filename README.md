@@ -32,10 +32,14 @@ This module does not provide any specific styling for the button itself, since t
 
 **Icons:**
 
-Use the correct icon based on the type of color. For example:
+Use the correct icon based on the type of opener. For example:
 
 * Primary buttons: `$vui-dropdown-icon-primary`
 * Secondary buttons: `$vui-dropdown-icon-secondary`
+* Context menu:
+	* Normal: `$vui-dropdown-icon-secondary`
+	* Focus: `$vui-dropdown-icon-secondary-focus`
+	* Open: `$vui-dropdown-icon-secondary-open`
 
 **Button Menu:**
 
