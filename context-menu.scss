@@ -14,11 +14,11 @@
 	box-sizing: border-box;
 	cursor: pointer;
 	display: inline-block;
-	min-height: calc(2rem + 2px);
+	min-height: calc(1.4rem + 2px);
 	outline-style: none;
 	padding: 0.5rem 0;
 	vertical-align: middle;
-	width: calc(2rem + 2px);
+	width: calc(1.4rem + 2px);
 
 	&:hover,
 	&:focus {
