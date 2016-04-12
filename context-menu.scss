@@ -33,14 +33,14 @@
 
 @mixin _vui-dropdown-context-menu-focus() {
 
-	background-color: $vui-color-woolonardo;
-	border-color: $vui-color-titanius;
+	background-image: $vui-dropdown-icon-secondary-focus;
+	border-color: $vui-color-pressicus;
 
 }
 
 @mixin vui-dropdown-context-menu-open() {
 
-	background-color: $vui-color-gypsum;
-	border-color: $vui-color-titanius;
+	background-image: $vui-dropdown-icon-secondary-open;
+	border-color: $vui-color-pressicus;
 
 }
