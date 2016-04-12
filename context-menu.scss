@@ -33,6 +33,7 @@
 
 @mixin _vui-dropdown-context-menu-focus() {
 
+	background-color: transparent;
 	background-image: $vui-dropdown-icon-secondary-focus;
 	border-color: $vui-color-pressicus;
 
@@ -40,6 +41,7 @@
 
 @mixin vui-dropdown-context-menu-open() {
 
+	background-color: transparent;
 	background-image: $vui-dropdown-icon-secondary-open;
 	border-color: $vui-color-pressicus;
 
