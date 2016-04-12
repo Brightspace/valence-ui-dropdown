@@ -34,8 +34,8 @@ This module does not provide any specific styling for the button itself, since t
 
 Use the correct icon based on the type of color. For example:
 
-* Primary buttons: `$vui-dropdown-primary`
-* Secondary buttons: `$vui-dropdown-secondary`
+* Primary buttons: `$vui-dropdown-icon-primary`
+* Secondary buttons: `$vui-dropdown-icon-secondary`
 
 **Button Menu:**
 
