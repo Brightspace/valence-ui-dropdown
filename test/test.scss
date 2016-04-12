@@ -1,4 +1,4 @@
-@import 'bower_components/vui-typography/typography.scss';
+@import 'node_modules/vui-typography/typography.scss';
 @import '../dropdown.scss';
 
 html {
@@ -65,4 +65,3 @@ td {
 .vui-dropdown-button-menu-primary > span.hidden-text {
 	@include vui-dropdown-button-menu-text-hidden;
 }
-

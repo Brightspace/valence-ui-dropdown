@@ -31,7 +31,11 @@
   },
   "homepage": "https://github.com/Brightspace/valence-ui-dropdown",
   "dependencies": {
-    "bower": "^1.6.5"
+    "bower": "^1.6.5",
+    "vui-button": "git://github.com/Brightspace/valence-ui-button.git#bsi-wc",
+    "vui-colors": "git://github.com/Brightspace/valence-ui-colors.git#sass",
+    "vui-link": "git://github.com/Brightspace/valence-ui-link.git#bsi-wc",
+    "vui-typography": "git://github.com/Brightspace/valence-ui-typography.git#bsi-wc"
   },
   "devDependencies": {
     "images-to-variables": "^0.3.0",
