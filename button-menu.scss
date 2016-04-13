@@ -17,7 +17,7 @@
 @mixin vui-dropdown-button-menu-content($icon: $vui-dropdown-icon-secondary) {
 
 	background-image: $icon;
-	background-size: 0.8rem;
+	background-size: 0.8rem 0.8rem;
 	background-position: right center;
 	background-repeat: no-repeat;
 	display: inline-block;
