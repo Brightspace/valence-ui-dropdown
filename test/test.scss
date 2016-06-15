@@ -1,11 +1,13 @@
-@import 'bower_components/vui-typography/typography.scss';
 @import '../dropdown.scss';
+
+@import url(https://s.brightspace.com/lib/fonts/0.3.0/fonts.css);
 
 html {
 	font-size: 20px;
 }
 body {
-	@include vui-typography;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
 	margin: 1rem;
 }
 table {
@@ -65,4 +67,3 @@ td {
 .vui-dropdown-button-menu-primary > span.hidden-text {
 	@include vui-dropdown-button-menu-text-hidden;
 }
-

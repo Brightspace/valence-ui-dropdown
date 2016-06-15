@@ -1,17 +1,13 @@
-@import 'bower_components/vui-button/button.scss';
-@import 'bower_components/vui-offscreen/offscreen.scss';
+@import 'bower_components/d2l-offscreen/offscreen.scss';
+@import 'button.scss';
 @import 'icons.scss';
 
 @mixin vui-dropdown-button-menu() {
-
-	@include vui-button;
-
+	@include _button;
 }
 
 @mixin vui-dropdown-button-menu-primary() {
-
-	@include vui-button-primary;
-
+	@include _button-primary;
 }
 
 @mixin vui-dropdown-button-menu-content($icon: $vui-dropdown-icon-secondary) {
@@ -42,7 +38,7 @@
 @mixin vui-dropdown-button-menu-text-hidden() {
 
 	& > span {
-		@include vui-offscreen;
+		@include d2l-offscreen;
 	}
 
 	padding-right: 0;
