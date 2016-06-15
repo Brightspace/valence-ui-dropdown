@@ -1,8 +1,7 @@
-@import 'bower_components/vui-colors/colors.scss';
-@import 'bower_components/vui-link/link.scss';
+@import 'bower_components/d2l-colors/d2l-colors.scss';
 
 $vui-dropdown-menu-offset: 0.5rem !default;
-$vui-dropdown-menu-item-separator-color: $vui-color-pressicus !default;
+$vui-dropdown-menu-item-separator-color: $d2l-color-pressicus !default;
 $vui-dropdown-menu-item-separator-width: 1px !default;
 
 $vui-dropdown-menu-animation-vertical-offset: 0.5rem !default;
@@ -10,12 +9,12 @@ $vui-dropdown-menu-animation-duration: 300ms !default;
 $vui-dropdown-menu-animation-timing: ease !default;
 
 @keyframes vui-dropdown-menu-animation-frames {
-	0% { 
+	0% {
 		margin-top: $vui-dropdown-menu-offset - $vui-dropdown-menu-animation-vertical-offset;
 		margin-bottom: $vui-dropdown-menu-offset - $vui-dropdown-menu-animation-vertical-offset;
 		opacity: 0;
 	}
-	100% { 
+	100% {
 		margin-top: $vui-dropdown-menu-offset;
 		margin-bottom: $vui-dropdown-menu-offset;
 		opacity: 1;
@@ -23,14 +22,14 @@ $vui-dropdown-menu-animation-timing: ease !default;
 }
 
 @mixin vui-dropdown-menu-animation() {
-	animation: vui-dropdown-menu-animation-frames 
-		$vui-dropdown-menu-animation-duration 
+	animation: vui-dropdown-menu-animation-frames
+		$vui-dropdown-menu-animation-duration
 		$vui-dropdown-menu-animation-timing;
 }
 
 @mixin vui-dropdown-menu() {
 
-	background-color: $vui-color-white;
+	background-color: $d2l-color-white;
 	border-radius: 0.4rem;
 	box-shadow: 0 2px 12px 0 rgba(86, 90, 92, .2);
 	min-width: 3.5rem;
@@ -46,9 +45,9 @@ $vui-dropdown-menu-animation-timing: ease !default;
 
 		& > li {
 
-			border-top: 1px solid $vui-color-titanius;
-			border-left: 1px solid $vui-color-titanius;
-			border-right: 1px solid $vui-color-titanius;
+			border-top: 1px solid $d2l-color-titanius;
+			border-left: 1px solid $d2l-color-titanius;
+			border-right: 1px solid $d2l-color-titanius;
 			line-height: 0;
 
 			&:first-child {
@@ -59,7 +58,7 @@ $vui-dropdown-menu-animation-timing: ease !default;
 			&:last-child {
 				border-bottom-left-radius: 0.4rem;
 				border-bottom-right-radius: 0.4rem;
-				border-bottom: 1px solid $vui-color-titanius;
+				border-bottom: 1px solid $d2l-color-titanius;
 			}
 
 		}
@@ -77,10 +76,10 @@ $vui-dropdown-menu-animation-timing: ease !default;
 
 @mixin vui-dropdown-menu-item-focus() {
 
-	background-color: $vui-color-celestine-light-1;
+	background-color: $d2l-color-celestine-light-1;
 
 	&, &:last-child {
-		border: 1px solid $vui-color-celestine-light-2;
+		border: 1px solid $d2l-color-celestine-light-2;
 	}
 
 	& + li,
@@ -92,7 +91,21 @@ $vui-dropdown-menu-animation-timing: ease !default;
 
 @mixin vui-dropdown-menu-item-link() {
 
-	@include vui-link($font-weight: 300);
+	&,
+	&:visited,
+	&:link,
+	&:active {
+		color: $d2l-color-celestine;
+		font-weight: 300;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:hover,
+	&:focus {
+		color: $d2l-color-celestuba;
+		text-decoration: underline;
+		outline-width: 0;
+	}
 
 	box-sizing: border-box;
 	display: inline-block;
@@ -105,7 +118,7 @@ $vui-dropdown-menu-animation-timing: ease !default;
 
 	&:focus,
 	&:hover {
-		color: $vui-color-celestine;
+		color: $d2l-color-celestine;
 		text-decoration: none;
 	}
 
