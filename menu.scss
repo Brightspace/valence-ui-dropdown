@@ -96,7 +96,6 @@ $vui-dropdown-menu-animation-timing: ease !default;
 	&:link,
 	&:active {
 		color: $d2l-color-celestine;
-		font-weight: 300;
 		text-decoration: none;
 		cursor: pointer;
 	}
@@ -109,7 +108,7 @@ $vui-dropdown-menu-animation-timing: ease !default;
 
 	box-sizing: border-box;
 	display: inline-block;
-	line-height: 1.5rem;
+	line-height: 1.4rem;
 	overflow-x: hidden;
 	padding: 0.75rem 1rem;
 	text-overflow: ellipsis;
