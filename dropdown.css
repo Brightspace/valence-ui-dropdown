@@ -47,7 +47,7 @@
 }
 
 .vui-dropdown-menu > ul > li[role='separator'] {
-  border: 0;
+  border: 1px solid transparent;
 }
 
 .vui-dropdown-menu > ul > li[role='separator'] + li {
@@ -64,7 +64,7 @@
 
 .vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus + li,
 .vui-dropdown-menu > ul > li.vui-dropdown-menu-item-focus + li[role='separator'] + li {
-  border-top-width: 0;
+  border-top: 1px solid transparent;
 }
 
 .vui-dropdown-menu-item-link {
